@@ -26,8 +26,8 @@ def remind(self,pk):
     try:
         smtp_server = smtplib.SMTP('localhost')
         smtp_server.starttls()
-        smtp_server.login('fstanie@126.com','high.12589')
-        smtp_server.sendmail('fstanie@126.com','fstanie@126.com',
+        smtp_server.login('xxxxxx','xxxxxx')
+        smtp_server.sendmail('xxxxxxx','xxxxxxm',
                              msg.as_string())
         smtp_server.close()
 
