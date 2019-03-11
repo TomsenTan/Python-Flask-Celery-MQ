@@ -32,7 +32,7 @@ def make_celery(app):
               with app.app_context():
                    return TaskBase.__call__(self,*args,**kwargs)
 
-     celery.task = ContextTask   #celery.Task报错？
+     celery.task = ContextTask   
 
      return celery
 
